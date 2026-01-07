@@ -1,0 +1,23 @@
+# IDE 配置文件
+.idea/
+.vscode/
+
+# Python 缓存文件
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 虚拟环境
+venv/
+ENV/
+env/
+
+# 下载的真题文件（通常不需要提交到 Git）
+downloads/
+
+# 日志文件
+*.log
+
+# 操作系统临时文件
+.DS_Store
+Thumbs.db
