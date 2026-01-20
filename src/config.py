@@ -15,8 +15,8 @@ BASE_URL = f"https://zhenti.burningvocabulary.cn/{CET_TYPE}"
 # ==========================================
 
 # 想要下载的年份范围
-START_YEAR = 2025  # 起始年份（含）
-END_YEAR = 2025    # 结束年份（含）
+START_YEAR = 2024  # 起始年份（含）
+END_YEAR = 2024    # 结束年份（含）
 
 # 真题保存目录
 # 使用 os.path.abspath 确保路径是绝对路径
@@ -29,6 +29,15 @@ DOWNLOAD_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "do
 
 # 详情页中“下载按钮”的完整 XPath 路径
 DOWNLOAD_BUTTON_XPATH = "/html/body/div[1]/div[1]/div[2]/div[3]/div/div[1]/div[2]/button[6]"
+
+# 详情页中“答案内容”的 XPath 路径
+ANSWER_CONTENT_XPATH = "/html/body/div[2]/div[5]/div[2]/div/section"
+
+# 详情页中“显示答案”按钮的 XPath 路径 (列表形式支持多套差异)
+SHOW_ANSWER_BUTTON_XPATHS = [
+    "/html/body/div[2]/div[4]/div[2]", # 第一、二套
+    "/html/body/div[2]/div[4]/div"     # 第三套
+]
 
 # ==========================================
 # 浏览器运行配置
